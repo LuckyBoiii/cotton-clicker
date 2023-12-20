@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotton Clicker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <div>
+            <div class="inventory">
+                <div class="cash_box inv_item">
+                    <p id="cash" style="font-size: 3rem;">0</p>
+                    <img src="images/cashIcon.png" alt="cash" style="width: 50px;">
+                </div>
+
+                <div class="cotton_box inv_item">
+                    <p id="cotton" style="font-size: 3rem;">0</p>
+                    <img src="images/cottonIcon.png" alt="cotton" style="width: 50px;">
+                </div>
+
+                <div class="passive_box inv_item">
+                    <p id="passive" style="font-size: 3rem;">0</p>
+                    <img src="images/cottonIcon.png" alt="cotton" style="width: 50px;">
+                    <p style="font-size: 1.8rem;" id="per_s"><b>/s</b></p>
+                </div>
+
+                <div class="sell_box inv_item" onclick="sellCotton()">
+                    <p style="font-size: 2rem;" id="sell_cotton_text"><b>Sell Cotton</b></p>
+                </div>
+            </div>
+        </div>
+        <div class="container_p1">
+            <div class="cotton_pic_container">
+                <img src="images/cottonbror.png" alt="cotton" id="cotton_image" onclick="onCottonClick()">
+
+            </div>
+        </div>
+        <div class="container_p2">
+            <div class="shop_container">
+                <div class="shop_item" onclick="buyClick(1)">
+                    <div style="height: 100%;"></div>
+                    <div class="shop_item_text">
+                        <p style="font-size: 1.8rem;"><b>Better Picking</b></p>
+                        <p style="font-size: 1.2rem;">Buy to get 1 more cotton per click</p>
+                    </div>
+                    <div class="shop_item_info">
+                        <p class="shop_item_cost" id="uppg_1_cost" style="font-size: 1.5rem;">10</p>
+                        <img src="images/cashIcon.png" alt="cash" class="shop_item_cash_icon">
+                    </div>
+                </div>
+                
+                <div class="shop_item" onclick="buyClick(2)">
+                    <div style="height: 100%;"></div>
+                    <div class="shop_item_text">
+                        <p style="font-size: 1.8rem;"><b>Cheap Worker</b></p>
+                        <p style="font-size: 1.2rem;">Buy to increase your passive cotton by 1</p>
+                    </div>
+                    <div class="shop_item_info">
+                        <p class="shop_item_cost" id="uppg_2_cost" style="font-size: 1.5rem;">100</p>
+                        <img src="images/cashIcon.png" alt="cash" class="shop_item_cash_icon">
+                    </div>
+                </div>
+
+                <div class="shop_item" onclick="buyClick(3)">
+                    <div style="height: 100%;"></div>
+                    <div class="shop_item_text">
+                        <p style="font-size: 1.8rem;"><b>Bigger Cotton</b></p>
+                        <p style="font-size: 1.2rem;">The cotton is bigger, what more can I say</p>
+                    </div>
+                    <div class="shop_item_info">
+                        <p class="shop_item_cost" id="uppg_3_cost" style="font-size: 1.5rem;">1000</p>
+                        <img src="images/cashIcon.png" alt="cash" class="shop_item_cash_icon">
+                    </div>
+                </div>
+                
+                <div class="shop_item" onclick="buyClick(4)">
+                    <div style="height: 100%;"></div>
+                    <div class="shop_item_text">
+                        <p style="font-size: 1.8rem;"><b>Expensive Cotton</b></p>
+                        <p style="font-size: 1.2rem;">Make that cotton PRICEY</p>
+                    </div>
+                    <div class="shop_item_info">
+                        <p class="shop_item_cost" id="uppg_4_cost" style="font-size: 1.5rem;">10000</p>
+                        <img src="images/cashIcon.png" alt="cash" class="shop_item_cash_icon">
+                    </div>
+                </div>
+                
+                <div class="shop_item" onclick="buyClick(5)">
+                    <div style="height: 100%;"></div>
+                    <div class="shop_item_text">
+                        <p style="font-size: 1.8rem;"><b>Better Worker</b></p>
+                        <p style="font-size: 1.2rem;">The better kind</p>
+                    </div>
+                    <div class="shop_item_info">
+                        <p class="shop_item_cost" id="uppg_5_cost" style="font-size: 1.5rem;">100000</p>
+                        <img src="images/cashIcon.png" alt="cash" class="shop_item_cash_icon">
+                    </div>
+                </div>
+                
+                <div class="shop_item hands_upgrade" onclick="buyClick(6)">
+                    <div style="height: 100%;"></div>
+                    <div class="shop_item_text">
+                        <p style="font-size: 1.8rem;"><b>Use Both Hands</b></p>
+                        <p style="font-size: 1.2rem;">Now you use both hands for picking</p>
+                    </div>
+                    <div class="shop_item_info">
+                        <p class="shop_item_cost" id="uppg_6_cost" style="font-size: 1.5rem;">1000000</p>
+                        <img src="images/cashIcon.png" alt="cash" class="shop_item_cash_icon">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="credits">
+                <p>Credits:</p>
+                <a href="https://www.flaticon.com/free-icons/money" title="money icons">Money icons created by vectorsmarket15 - Flaticon</a>
+                <a href="https://www.flaticon.com/free-icons/cotton" title="Cotton icons">Cotton icons created by Freepik - Flaticon</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
